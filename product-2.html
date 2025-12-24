@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>NOVA - Vita C Collagen Cream | Anti-Rides</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Mobile overflow fix */
+        html, body {
+            overflow-x: hidden !important;
+            width: 100% !important;
+            max-width: 100vw !important;
+        }
+        @media (max-width: 768px) {
+            .product-section,
+            .product-section .container,
+            .product-showcase,
+            .product-details,
+            .product-benefits,
+            .benefit,
+            .add-to-cart-btn,
+            .product-guarantees {
+                max-width: 100% !important;
+                width: 100% !important;
+                overflow: hidden !important;
+                box-sizing: border-box !important;
+            }
+            .btn, .add-to-cart-btn {
+                white-space: normal !important;
+                word-wrap: break-word !important;
+            }
+        }
+        
+        /* Orange/Gold Theme for Product 2 */
+        :root {
+            --accent-p2: #d4a853;
+            --accent-p2-light: #e8c47a;
+            --accent-p2-dark: #b8923f;
+            --accent-p2-bg: #fdf6e8;
+        }
+        
+        .product-2-theme .hero-badge {
+            background: var(--accent-p2);
+        }
+        
+        .product-2-theme .highlight {
+            color: var(--accent-p2);
+        }
+        
+        .product-2-theme .hero-glow {
+            background: radial-gradient(circle, rgba(212, 168, 83, 0.3) 0%, transparent 70%);
+        }
+        
+        .product-2-theme .hero-ring {
+            border-color: rgba(212, 168, 83, 0.2);
+        }
+        
+        .product-2-theme .particle {
+            background: var(--accent-p2);
+        }
+        
+        .product-2-theme .marquee-banner {
+            background: linear-gradient(90deg, var(--accent-p2) 0%, var(--accent-p2-light) 50%, var(--accent-p2) 100%);
+        }
+        
+        .product-2-theme .feature-icon {
+            color: var(--accent-p2);
+        }
+        
+        .product-2-theme .product-category {
+            color: var(--accent-p2);
+        }
+        
+        .product-2-theme .section-tag {
+            color: var(--accent-p2);
+            background: var(--accent-p2-bg);
+        }
+        
+        .product-2-theme .btn-primary {
+            background: var(--accent-p2-dark);
+        }
+        
+        .product-2-theme .btn-primary:hover {
+            background: var(--accent-p2);
+        }
+        
+        .product-2-theme .product-rating .stars {
+            color: var(--accent-p2);
+        }
+        
+        .product-2-theme .benefit-icon {
+            color: var(--accent-p2);
+        }
+        
+        .product-2-theme .guarantee svg {
+            color: var(--accent-p2);
+        }
+        
+        .product-2-theme .ingredient-icon {
+            background: var(--accent-p2-bg);
+            color: var(--accent-p2);
+        }
+        
+        .product-2-theme .stat-number {
+            color: var(--accent-p2);
+        }
+        
+        .product-2-theme .routine-number {
+            background: var(--accent-p2);
+        }
+        
+        .product-2-theme .nav-links a:hover::after,
+        .product-2-theme .nav-links a::after {
+            background: var(--accent-p2);
+        }
+        
+        .product-2-theme .cart-count {
+            background: var(--accent-p2);
+        }
+        
+        .product-2-theme .hero {
+            background: linear-gradient(135deg, var(--accent-p2-bg) 0%, var(--secondary) 100%);
+        }
+        
+        .product-2-theme .product-section {
+            background: var(--accent-p2-bg);
+        }
+        
+        .product-2-theme .ingredients-section {
+            background: linear-gradient(180deg, var(--secondary) 0%, var(--accent-p2-bg) 100%);
+        }
+        
+        .product-2-theme .sticky-cta .btn-primary {
+            background: var(--accent-p2-dark);
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Outfit:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="product-2-theme">
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <p>Livraison offerte</p>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">NOVA</a>
+            <div class="nav-links">
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-dropdown-trigger">Nos Soins <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></a>
+                    <div class="nav-dropdown-menu">
+                        <a href="product.html" class="dropdown-product">
+                            <img src="assets/images/produit%201/product-img-1.png" alt="PDRN Cream">
+                            <div class="dropdown-product-info">
+                                <span class="dropdown-product-name">PDRN Capsule Cream 100</span>
+                                <span class="dropdown-product-price">34,99€</span>
+                            </div>
+                        </a>
+                        <a href="product-2.html" class="dropdown-product">
+                            <img src="assets/images/produit%202/S0f86d7e353f6494e8389df31299e6eb5a.jpg_960x960q75.jpg_.png" alt="Vita C Cream">
+                            <div class="dropdown-product-info">
+                                <span class="dropdown-product-name">Vita C Collagen Cream</span>
+                                <span class="dropdown-product-price">39,99€</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <a href="#ingredients">Ingrédients</a>
+                <a href="#science">La Science</a>
+                <a href="#routine">Routine</a>
+            </div>
+            <div class="nav-actions">
+                <button class="cart-btn">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M6 6h15l-1.5 9h-12z"></path>
+                        <circle cx="9" cy="20" r="1"></circle>
+                        <circle cx="18" cy="20" r="1"></circle>
+                    </svg>
+                    <span class="cart-count">0</span>
+                </button>
+            </div>
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="hero-badge">✨ Nouveauté K-Beauty</span>
+            <h1>Le Secret<br><span class="highlight">Anti-Rides</span></h1>
+            <p class="hero-subtitle">Découvrez la puissance des capsules dorées de Vitamine C et Collagène. Cette crème gel légère libère des actifs concentrés pour une peau ferme, lumineuse et visiblement rajeunie.</p>
+            <div class="hero-cta">
+                <a href="#product" class="btn btn-primary">Découvrir le Soin</a>
+                <a href="#science" class="btn btn-secondary">La Science</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="hero-image-container">
+                <div class="hero-glow"></div>
+                <div class="hero-ring ring-1"></div>
+                <div class="hero-ring ring-2"></div>
+                <div class="hero-ring ring-3"></div>
+                <div class="floating-particles">
+                    <span class="particle"></span>
+                    <span class="particle"></span>
+                    <span class="particle"></span>
+                    <span class="particle"></span>
+                    <span class="particle"></span>
+                    <span class="particle"></span>
+                </div>
+                <img src="assets/images/produit%202/S0f86d7e353f6494e8389df31299e6eb5a.jpg_960x960q75.jpg_.png" alt="NOVA Vita C Collagen Cream" class="hero-product-img">
+                <div class="floating-badge">50ml</div>
+                <div class="shine-sweep"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marquee Banner -->
+    <div class="marquee-banner">
+        <div class="marquee-content">
+            <span>✨ ANTI-RIDES PUISSANT</span>
+            <span>✨ VITAMINE C CONCENTRÉE</span>
+            <span>✨ COLLAGÈNE ACTIF</span>
+            <span>✨ PEAU FERME EN 14 JOURS</span>
+            <span>✨ ANTI-RIDES PUISSANT</span>
+            <span>✨ VITAMINE C CONCENTRÉE</span>
+            <span>✨ COLLAGÈNE ACTIF</span>
+            <span>✨ PEAU FERME EN 14 JOURS</span>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M12 6v6l4 2"/>
+                    </svg>
+                </div>
+                <h3>Capsules 3D Vita C</h3>
+                <p>Technologie de libération prolongée pour une efficacité maximale des actifs</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                    </svg>
+                </div>
+                <h3>Collagène Actif</h3>
+                <p>Raffermit la peau et réduit visiblement les rides et ridules</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    </svg>
+                </div>
+                <h3>Testé Dermatologiquement</h3>
+                <p>Sans colorants artificiels, formule douce pour tous types de peau</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Section -->
+    <section class="product-section" id="product">
+        <div class="container">
+            <div class="product-showcase">
+                <div class="product-gallery">
+                    <div class="main-image">
+                        <img src="assets/images/produit%202/S0f86d7e353f6494e8389df31299e6eb5a.jpg_960x960q75.jpg_.png" alt="NOVA Vita C Collagen Cream" id="mainProductImage">
+                        <video id="mainProductVideo" muted loop playsinline style="display: none; width: 100%; height: 100%; object-fit: contain;"></video>
+                    </div>
+                    <div class="product-thumbnails">
+                        <div class="thumbnail active" data-type="image" data-src="assets/images/produit%202/S0f86d7e353f6494e8389df31299e6eb5a.jpg_960x960q75.jpg_.png">
+                            <img src="assets/images/produit%202/S0f86d7e353f6494e8389df31299e6eb5a.jpg_960x960q75.jpg_.png" alt="Vue principale">
+                        </div>
+                        <div class="thumbnail" data-type="image" data-src="assets/images/produit%202/S100833593a9a4c09acd94ec6918192de0.jpg_220x220q75.jpg_.jpg">
+                            <img src="assets/images/produit%202/S100833593a9a4c09acd94ec6918192de0.jpg_220x220q75.jpg_.jpg" alt="Détail">
+                        </div>
+                        <div class="thumbnail" data-type="image" data-src="assets/images/produit%202/S1ae77c9da93e4bd2937e3b01675594b6M.jpg_220x220q75.jpg_.jpg">
+                            <img src="assets/images/produit%202/S1ae77c9da93e4bd2937e3b01675594b6M.jpg_220x220q75.jpg_.jpg" alt="Texture">
+                        </div>
+                        <div class="thumbnail" data-type="image" data-src="assets/images/produit%202/S63e4d706a6ce45608ae8d1117570d2553.jpg_220x220q75.jpg_.png">
+                            <img src="assets/images/produit%202/S63e4d706a6ce45608ae8d1117570d2553.jpg_220x220q75.jpg_.png" alt="Capsules">
+                        </div>
+                        <div class="thumbnail" data-type="image" data-src="assets/images/produit%202/Sf29d373c7b714ff9be08209f51ec460eX.jpg_220x220q75.jpg_.jpg">
+                            <img src="assets/images/produit%202/Sf29d373c7b714ff9be08209f51ec460eX.jpg_220x220q75.jpg_.jpg" alt="Application">
+                        </div>
+                    </div>
+                </div>
+                <div class="product-details">
+                    <div class="product-badges">
+                        <span class="badge-hot" style="background: #d4a853;">🔥 NOUVEAUTÉ</span>
+                        <span class="badge-stock" style="background: #b8923f;">Stock limité</span>
+                    </div>
+                    <span class="product-category">Soin Anti-Âge</span>
+                    <h2>Vita C Collagen Cream</h2>
+                    <p class="product-tagline">Capsules dorées anti-rides au collagène</p>
+                    
+                    <div class="product-rating">
+                        <div class="stars">★★★★★</div>
+                        <span class="rating-text">4.8 (247 avis)</span>
+                    </div>
+                    
+                    <div class="product-price-block">
+                        <span class="price-old">54,99€</span>
+                        <span class="price">39,99€</span>
+                        <span class="discount-badge" style="background: #d4a853;">-27%</span>
+                    </div>
+                    
+                    <p class="product-description">
+                        Une crème gel légère aux capsules 3D de Vitamine C concentrée et Collagène actif. La technologie de libération prolongée assure une hydratation profonde et une protection optimale. Résultats visibles : peau raffermie, rides atténuées, teint lumineux.
+                    </p>
+                    
+                    <div class="product-benefits">
+                        <div class="benefit">
+                            <span class="benefit-icon">✨</span>
+                            <span><strong>Anti-Rides Visible</strong> - Réduit les rides en 14 jours</span>
+                        </div>
+                        <div class="benefit">
+                            <span class="benefit-icon">✓</span>
+                            <span>Vitamine C concentrée - <strong>Éclat garanti</strong></span>
+                        </div>
+                        <div class="benefit">
+                            <span class="benefit-icon">✓</span>
+                            <span>Collagène actif - <strong>Fermeté retrouvée</strong></span>
+                        </div>
+                        <div class="benefit">
+                            <span class="benefit-icon">✓</span>
+                            <span>Testé dermatologiquement - Sans colorants</span>
+                        </div>
+                    </div>
+                    
+                    <div class="quantity-selector">
+                        <label>Quantité</label>
+                        <div class="quantity-controls">
+                            <button class="qty-btn minus">−</button>
+                            <input type="number" value="1" min="1" max="10" class="qty-input">
+                            <button class="qty-btn plus">+</button>
+                        </div>
+                    </div>
+                    
+                    <button class="btn btn-primary btn-full add-to-cart-btn pulse-btn">
+                        🛒 Ajouter au panier — 39,99€
+                    </button>
+                    
+                    <div class="product-guarantees">
+                        <div class="guarantee">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                            <span>Livraison offerte</span>
+                        </div>
+                        <div class="guarantee">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span>Satisfait ou remboursé 14 jours</span>
+                        </div>
+                        <div class="guarantee">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                            </svg>
+                            <span>Paiement 100% sécurisé</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ingredients Section -->
+    <section class="ingredients-section" id="ingredients">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-tag">INGRÉDIENTS CLÉS</span>
+                <h2>Une Formule d'Exception</h2>
+                <p>Des actifs premium pour des résultats anti-âge visibles</p>
+            </div>
+            
+            <div class="ingredients-grid">
+                <div class="ingredient-card">
+                    <div class="ingredient-icon">🍊</div>
+                    <h3>Vitamine C Concentrée</h3>
+                    <p>Antioxydant puissant qui illumine le teint, unifie la peau et stimule la production de collagène naturel.</p>
+                </div>
+                <div class="ingredient-card">
+                    <div class="ingredient-icon">✨</div>
+                    <h3>Collagène Marin</h3>
+                    <p>Raffermit la peau en profondeur, réduit les rides et restaure l'élasticité pour un effet lifting naturel.</p>
+                </div>
+                <div class="ingredient-card">
+                    <div class="ingredient-icon">🌿</div>
+                    <h3>Extrait d'Argousier</h3>
+                    <p>Améliore la douceur et l'hydratation de la peau grâce à une nutrition profonde et réparatrice.</p>
+                </div>
+                <div class="ingredient-card">
+                    <div class="ingredient-icon">💧</div>
+                    <h3>Gel Hydratant Léger</h3>
+                    <p>Base gel non grasse qui pénètre instantanément pour une hydratation longue durée sans effet collant.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Science Section -->
+    <section class="science-section" id="science">
+        <div class="container">
+            <div class="science-content">
+                <div class="section-header">
+                    <span class="section-tag">LA SCIENCE</span>
+                    <h2>Capsules 3D Deep Vita C</h2>
+                    <p>Une technologie innovante pour une efficacité maximale</p>
+                </div>
+                
+                <div class="science-text">
+                    <p>Les capsules dorées contiennent une concentration optimale de Vitamine C stabilisée et de Collagène actif. La technologie 3D Deep permet une libération progressive des actifs, assurant une protection et une hydratation continues tout au long de la journée.</p>
+                    <p>Chaque application délivre une dose précise d'ingrédients actifs directement dans l'épiderme, là où ils sont les plus efficaces pour combattre les signes du vieillissement.</p>
+                </div>
+                
+                <div class="science-stats">
+                    <div class="stat">
+                        <span class="stat-number">-35%</span>
+                        <span class="stat-label">Rides visibles</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">+40%</span>
+                        <span class="stat-label">Fermeté</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">+55%</span>
+                        <span class="stat-label">Éclat du teint</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Routine Section -->
+    <section class="routine-section" id="routine">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-tag">ROUTINE BEAUTÉ</span>
+                <h2>Comment l'Utiliser</h2>
+                <p>Intégrez ce soin à votre routine quotidienne</p>
+            </div>
+            
+            <div class="routine-steps">
+                <div class="routine-step">
+                    <span class="routine-number">1</span>
+                    <h3>Nettoyez</h3>
+                    <p>Commencez par nettoyer votre visage avec votre nettoyant habituel</p>
+                </div>
+                <div class="routine-step">
+                    <span class="routine-number">2</span>
+                    <h3>Appliquez</h3>
+                    <p>Prélevez une noisette de crème et appliquez sur le visage et le cou</p>
+                </div>
+                <div class="routine-step">
+                    <span class="routine-number">3</span>
+                    <h3>Massez</h3>
+                    <p>Massez délicatement en mouvements circulaires jusqu'à absorption</p>
+                </div>
+                <div class="routine-step">
+                    <span class="routine-number">4</span>
+                    <h3>Protégez</h3>
+                    <p>Le matin, appliquez une protection solaire par-dessus</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-tag">AVIS CLIENTS</span>
+                <h2>Elles l'Adorent</h2>
+                <div class="reviews-summary">
+                    <span class="stars-large">★★★★★</span>
+                    <span class="rating-score">4.8/5</span>
+                    <span class="total-reviews">basé sur 247 avis vérifiés</span>
+                </div>
+            </div>
+            
+            <div class="reviews-list">
+                <div class="review-item">
+                    <div class="review-header">
+                        <div class="review-author-info">
+                            <span class="author-name">V***</span>
+                            <span class="verified-badge">✓ Achat vérifié</span>
+                        </div>
+                        <div class="review-meta">
+                            <span class="stars">★★★★★</span>
+                            <span class="review-date">05 Déc 2025</span>
+                        </div>
+                    </div>
+                    <p class="review-text">"C'est une crème hydratante incroyable qui laisse la peau si hydratée et lumineuse. J'adore qu'elle unifie aussi le teint sans abîmer la barrière cutanée."</p>
+                    <div class="review-image">
+                        <img src="assets/images/produit%202/avis/S5ead644d5c7d489dac8e42d42a2b36b9T.jpg_960x960q75.jpg_.avif" alt="Photo avis client">
+                    </div>
+                </div>
+                
+                <div class="review-item">
+                    <div class="review-header">
+                        <div class="review-author-info">
+                            <span class="author-name">M***i</span>
+                            <span class="verified-badge">✓ Achat vérifié</span>
+                        </div>
+                        <div class="review-meta">
+                            <span class="stars">★★★★★</span>
+                            <span class="review-date">07 Déc 2025</span>
+                        </div>
+                    </div>
+                    <p class="review-text">"Gel hydratant pour le visage, et donne un éclat le lendemain. C'est une sensation géniale 👍🏻"</p>
+                    <div class="review-image">
+                        <img src="assets/images/produit%202/avis/S8630eb4af82e4c0c8f18a58b334c7d618.jpg_960x960q75.jpg_.avif" alt="Photo avis client">
+                    </div>
+                </div>
+                
+                <div class="review-item">
+                    <div class="review-header">
+                        <div class="review-author-info">
+                            <span class="author-name">m***r</span>
+                            <span class="verified-badge">✓ Achat vérifié</span>
+                        </div>
+                        <div class="review-meta">
+                            <span class="stars">★★★★★</span>
+                            <span class="review-date">11 Déc 2025</span>
+                        </div>
+                    </div>
+                    <p class="review-text">"J'ai vraiment obtenu une amélioration incroyable de ma peau. Je ne suis pas du tout déçue par ce produit. La texture est juste parfaite."</p>
+                    <div class="review-image">
+                        <img src="assets/images/produit%202/avis/Sfa305c41ded84aa2b620e49d32f97b395.jpg_960x960q75.jpg_.jpg" alt="Photo avis client">
+                    </div>
+                </div>
+                
+                <div class="review-item">
+                    <div class="review-header">
+                        <div class="review-author-info">
+                            <span class="author-name">E***o</span>
+                            <span class="verified-badge">✓ Achat vérifié</span>
+                        </div>
+                        <div class="review-meta">
+                            <span class="stars">★★★★★</span>
+                            <span class="review-date">22 Sep 2025</span>
+                        </div>
+                    </div>
+                    <p class="review-text">"Il est merveilleux !"</p>
+                </div>
+                
+                <div class="review-item">
+                    <div class="review-header">
+                        <div class="review-author-info">
+                            <span class="author-name">R***s</span>
+                            <span class="verified-badge">✓ Achat vérifié</span>
+                        </div>
+                        <div class="review-meta">
+                            <span class="stars">★★★★★</span>
+                            <span class="review-date">11 Jul 2025</span>
+                        </div>
+                    </div>
+                    <p class="review-text">"J'ai entendu de très bons avis sur ce produit, il a l'air de très bonne qualité."</p>
+                </div>
+                
+                <div class="review-item">
+                    <div class="review-header">
+                        <div class="review-author-info">
+                            <span class="author-name">N***a</span>
+                            <span class="verified-badge">✓ Achat vérifié</span>
+                        </div>
+                        <div class="review-meta">
+                            <span class="stars">★★★★☆</span>
+                            <span class="review-date">14 Sep 2025</span>
+                        </div>
+                    </div>
+                    <p class="review-text">"Bien reçu, le pot est petit mais je vais l'essayer."</p>
+                </div>
+                
+                <div class="review-item">
+                    <div class="review-header">
+                        <div class="review-author-info">
+                            <span class="author-name">S***</span>
+                            <span class="verified-badge">✓ Achat vérifié</span>
+                        </div>
+                        <div class="review-meta">
+                            <span class="stars">★★★★★</span>
+                            <span class="review-date">19 Sep 2025</span>
+                        </div>
+                    </div>
+                    <p class="review-text">"Pourquoi j'ai choisi ce produit ? Il fonctionne super bien et je vois clairement une amélioration sur mon visage."</p>
+                </div>
+                
+                <div class="review-item">
+                    <div class="review-header">
+                        <div class="review-author-info">
+                            <span class="author-name">U***m</span>
+                            <span class="verified-badge">✓ Achat vérifié</span>
+                        </div>
+                        <div class="review-meta">
+                            <span class="stars">★★★★★</span>
+                            <span class="review-date">15 Août 2025</span>
+                        </div>
+                    </div>
+                    <p class="review-text">"J'adore cette crème, je l'utilise déjà et elle est incroyable. Je l'applique tous les soirs."</p>
+                </div>
+                
+                <div class="review-item">
+                    <div class="review-header">
+                        <div class="review-author-info">
+                            <span class="author-name">m***r</span>
+                            <span class="verified-badge">✓ Achat vérifié</span>
+                        </div>
+                        <div class="review-meta">
+                            <span class="stars">★★★★★</span>
+                            <span class="review-date">21 Déc 2025</span>
+                        </div>
+                    </div>
+                    <p class="review-text">"J'adore cette vitamine C. C'est un super produit à intégrer dans sa routine quotidienne."</p>
+                </div>
+                
+                <div class="review-item">
+                    <div class="review-header">
+                        <div class="review-author-info">
+                            <span class="author-name">h***e</span>
+                            <span class="verified-badge">✓ Achat vérifié</span>
+                        </div>
+                        <div class="review-meta">
+                            <span class="stars">★★★★★</span>
+                            <span class="review-date">04 Déc 2025</span>
+                        </div>
+                    </div>
+                    <p class="review-text">"Reçu avant la date prévue, j'apprécie beaucoup ! L'emballage est soigné. J'utilise ce produit depuis environ un mois maintenant et je vois déjà une différence sur ma peau."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Prête à Rajeunir Votre Peau ?</h2>
+                <p>Rejoignez les milliers de femmes qui ont retrouvé une peau ferme et lumineuse</p>
+                <a href="#product" class="btn btn-primary">Commander Maintenant</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">NOVA</a>
+                    <p>L'excellence cosmétique coréenne.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="TikTok">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Pinterest">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 01.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="product.html">PDRN Cream</a></li>
+                        <li><a href="product-2.html">Vita C Cream</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Service Client</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="livraison.html">Livraison</a></li>
+                        <li><a href="retours.html">Retours</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Informations légales</h4>
+                    <ul>
+                        <li><a href="terms.html">CGV</a></li>
+                        <li><a href="confidentialite.html">Politique de confidentialité</a></li>
+                        <li><a href="terms.html#mentions">Mentions légales</a></li>
+                    </ul>
+                </div>
+                <div class="footer-trust">
+                    <h4>Paiement Sécurisé</h4>
+                    <div class="payment-icons">
+                        <span class="payment-icon">VISA</span>
+                        <span class="payment-icon">MC</span>
+                        <span class="payment-icon">PAYPAL</span>
+                        <span class="payment-icon">APPLE</span>
+                    </div>
+                    <div class="trust-badges">
+                        <div class="trust-badge">🔒 SSL Sécurisé</div>
+                        <div class="trust-badge">✓ Satisfait ou Remboursé</div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 NOVA. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky Add to Cart (Mobile) -->
+    <div class="sticky-cta">
+        <div class="sticky-content">
+            <span class="sticky-price">39,99€</span>
+            <button class="btn btn-primary sticky-add-to-cart">Ajouter au panier</button>
+        </div>
+    </div>
+
+    <!-- Cart Drawer -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <div class="cart-drawer" id="cartDrawer">
+        <div class="cart-drawer-header">
+            <h3>Mon Panier</h3>
+            <button class="cart-close" id="cartClose">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 6L6 18M6 6l12 12"></path>
+                </svg>
+            </button>
+        </div>
+        
+        <div class="cart-drawer-labels">
+            <span>PRODUIT</span>
+            <span>TOTAL</span>
+        </div>
+        
+        <div class="cart-drawer-content" id="cartDrawerContent">
+            <!-- Cart items will be inserted here -->
+        </div>
+
+        <div class="cart-drawer-footer">
+            <div class="cart-total">
+                <span>TOTAL</span>
+                <span class="cart-total-price" id="cartTotalPrice">0,00 EUR €</span>
+            </div>
+            
+            <p class="cart-taxes">Taxes incluses. Réductions et <a href="#">frais d'expédition</a> calculés à l'étape du paiement.</p>
+            
+            <button class="checkout-btn" id="checkoutBtn">PROCÉDER AU PAIEMENT</button>
+        </div>
+    </div>
+
+    <script src="script-product-2.js"></script>
+</body>
+</html>
