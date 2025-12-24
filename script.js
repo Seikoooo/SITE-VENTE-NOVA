@@ -594,6 +594,8 @@ document.querySelectorAll('.accordion-header').forEach(header => {
 });
 
 // ===== CONSOLE BRANDING =====
-console.log('%cNOVA', 'font-size: 48px; font-family: serif; font-weight: bold; color: #4db3a0;');
+console.log('%cNYVEX', 'font-size: 48px; font-family: serif; font-weight: bold; color: #4db3a0;');
 console.log('%cTeint Glassy - Glass Skin', 'font-size: 14px; color: #6b6b6b;');
+
+
 

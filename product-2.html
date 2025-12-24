@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>NOVA - Vita C Collagen Cream | Anti-Rides</title>
+    <title>NYVEX - Vita C Collagen Cream | Anti-Rides</title>
     <link rel="stylesheet" href="style.css">
     <style>
         /* Mobile overflow fix */
@@ -13,17 +13,57 @@
             max-width: 100vw !important;
         }
         @media (max-width: 768px) {
-            .product-section,
-            .product-section .container,
-            .product-showcase,
-            .product-details,
-            .product-benefits,
-            .benefit,
-            .add-to-cart-btn,
-            .product-guarantees {
-                max-width: 100% !important;
+            .product-section {
+                overflow-x: hidden !important;
                 width: 100% !important;
+                max-width: 100% !important;
+            }
+            .product-section .container {
+                padding: 0 15px !important;
+                margin: 0 !important;
+                width: 100% !important;
+                max-width: 100% !important;
                 overflow: hidden !important;
+            }
+            .product-showcase {
+                display: flex !important;
+                flex-direction: column !important;
+                gap: 20px !important;
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+            .product-gallery {
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+            .main-image {
+                padding: 20px !important;
+                width: 100% !important;
+                max-width: 100% !important;
+                box-sizing: border-box !important;
+            }
+            .main-image img {
+                max-width: 100% !important;
+                height: auto !important;
+            }
+            .product-thumbnails {
+                width: 100% !important;
+                max-width: 100% !important;
+                overflow-x: auto !important;
+                justify-content: flex-start !important;
+            }
+            .product-details {
+                width: 100% !important;
+                max-width: 100% !important;
+                padding: 0 !important;
+            }
+            .product-details * {
+                max-width: 100% !important;
+                box-sizing: border-box !important;
+            }
+            .add-to-cart-btn {
+                width: 100% !important;
+                max-width: 100% !important;
                 box-sizing: border-box !important;
             }
             .btn, .add-to-cart-btn {
@@ -148,7 +188,7 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <a href="index.html" class="logo">NOVA</a>
+            <a href="index.html" class="logo">NYVEX</a>
             <div class="nav-links">
                 <div class="nav-dropdown">
                     <a href="#" class="nav-dropdown-trigger">Nos Soins <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></a>
@@ -197,7 +237,7 @@
             <div class="product-showcase">
                 <div class="product-gallery">
                     <div class="main-image">
-                        <img src="assets/images/produit%202/S0f86d7e353f6494e8389df31299e6eb5a.jpg_960x960q75.jpg_.png" alt="NOVA Vita C Collagen Cream" id="mainProductImage">
+                        <img src="assets/images/produit%202/S0f86d7e353f6494e8389df31299e6eb5a.jpg_960x960q75.jpg_.png" alt="NYVEX Vita C Collagen Cream" id="mainProductImage">
                         <video id="mainProductVideo" muted loop playsinline style="display: none; width: 100%; height: 100%; object-fit: contain;"></video>
                     </div>
                     <div class="product-thumbnails">
@@ -219,7 +259,7 @@
                         <div class="thumbnail" data-type="image" data-src="assets/images/produit%202/447921647_1639602900119745_6290072599222871963_n.jpg">
                             <img src="assets/images/produit%202/447921647_1639602900119745_6290072599222871963_n.jpg" alt="Texture">
                         </div>
-                        <div class="thumbnail" data-type="video" data-src="https://github.com/Seikoooo/SITE-VENTE-NOVA/releases/download/produit2/1224.1.mp4">
+                        <div class="thumbnail" data-type="video" data-src="https://github.com/Seikoooo/SITE-VENTE-NYVEX/releases/download/produit2/1224.1.mp4">
                             <div class="video-thumb">▶</div>
                         </div>
                     </div>
@@ -396,7 +436,7 @@
                 <div class="section-header">
                     <span class="section-tag">LA SCIENCE</span>
                     <h2>Capsules 3D Deep Vita C</h2>
-                    <p>Une technologie innovante pour une efficacité maximale</p>
+                    <p>Une technologie inNYVEXnte pour une efficacité maximale</p>
                 </div>
                 
                 <div class="science-text">
@@ -638,7 +678,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <a href="index.html" class="logo">NOVA</a>
+                    <a href="index.html" class="logo">NYVEX</a>
                     <p>L'excellence cosmétique coréenne.</p>
                     <div class="social-links">
                         <a href="#" aria-label="Instagram">
@@ -698,7 +738,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© 2024 NOVA. Tous droits réservés.</p>
+                <p>© 2024 NYVEX. Tous droits réservés.</p>
             </div>
         </div>
     </footer>
@@ -747,3 +787,5 @@
     <script src="script-product-2.js"></script>
 </body>
 </html>
+
+
