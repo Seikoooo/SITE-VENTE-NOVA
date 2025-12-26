@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page non trouvée - NYVEX</title>
+    <meta name="robots" content="noindex, follow">
+    <link rel="icon" type="image/jpeg" href="assets/favicon/599199188_836603852702225_4017117236872249230_n.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Outfit:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        .error-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 20px;
+            background: var(--cream);
+        }
+        .error-content {
+            max-width: 600px;
+        }
+        .error-code {
+            font-size: 8rem;
+            font-family: 'Cormorant Garamond', serif;
+            color: var(--accent);
+            line-height: 1;
+            margin-bottom: 20px;
+        }
+        .error-title {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: var(--primary);
+        }
+        .error-text {
+            color: #666;
+            margin-bottom: 30px;
+            line-height: 1.7;
+        }
+        .error-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        .error-links a {
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+        }
+        .error-links .primary {
+            background: var(--accent);
+            color: #fff;
+        }
+        .error-links .primary:hover {
+            background: var(--accent-dark);
+        }
+        .error-links .secondary {
+            background: #fff;
+            color: var(--primary);
+            border: 1px solid #ddd;
+        }
+        .error-links .secondary:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+        .popular-products {
+            margin-top: 50px;
+            padding-top: 40px;
+            border-top: 1px solid #ddd;
+        }
+        .popular-products h3 {
+            margin-bottom: 25px;
+            color: var(--primary);
+        }
+        .mini-products {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .mini-product {
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            text-decoration: none;
+            color: var(--primary);
+            width: 200px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .mini-product:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .mini-product img {
+            width: 100%;
+            height: 150px;
+            object-fit: contain;
+            margin-bottom: 10px;
+        }
+        .mini-product h4 {
+            font-size: 0.95rem;
+            margin-bottom: 5px;
+        }
+        .mini-product span {
+            color: var(--accent);
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <section class="error-page">
+        <div class="error-content">
+            <div class="error-code">404</div>
+            <h1 class="error-title">Oups ! Page introuvable</h1>
+            <p class="error-text">La page que vous cherchez n'existe pas ou a été déplacée. Pas de panique, votre peau parfaite vous attend ailleurs !</p>
+            
+            <div class="error-links">
+                <a href="index.html" class="primary">Retour à l'accueil</a>
+                <a href="product.html" class="secondary">Voir nos produits</a>
+                <a href="contact.html" class="secondary">Nous contacter</a>
+            </div>
+            
+            <div class="popular-products">
+                <h3>Nos best-sellers</h3>
+                <div class="mini-products">
+                    <a href="product.html" class="mini-product">
+                        <img src="assets/images/produit%201/product-img-1.png" alt="PDRN Capsule Cream 100 - Crème anti-âge coréenne">
+                        <h4>PDRN Capsule Cream</h4>
+                        <span>34,99€</span>
+                    </a>
+                    <a href="product-2.html" class="mini-product">
+                        <img src="assets/images/produit%202/S0f86d7e353f6494e8389df31299e6eb5a.jpg_960x960q75.jpg_.png" alt="Vita C Collagen Cream - Crème Vitamine C">
+                        <h4>Vita C Collagen Cream</h4>
+                        <span>39,99€</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

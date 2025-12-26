@@ -8,6 +8,16 @@
         <lastmod>2024-12-26</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://nyvex.fr/assets/images/produit%201/product-img-1.png</image:loc>
+            <image:title>PDRN Capsule Cream 100 - Crème Anti-Âge Coréenne NYVEX</image:title>
+            <image:caption>Crème régénérante aux capsules PDRN de VT Cosmetics</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://nyvex.fr/assets/images/produit%202/S0f86d7e353f6494e8389df31299e6eb5a.jpg_960x960q75.jpg_.png</image:loc>
+            <image:title>Vita C Collagen Cream - Crème Vitamine C Anti-Rides</image:title>
+            <image:caption>Crème anti-rides aux capsules dorées Vitamine C et Collagène</image:caption>
+        </image:image>
     </url>
     
     <!-- Produit 1 : PDRN Capsule Cream -->
@@ -17,8 +27,17 @@
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
         <image:image>
-            <image:loc>https://nyvex.fr/assets/images/produit%201/main.jpg</image:loc>
+            <image:loc>https://nyvex.fr/assets/images/produit%201/product-img-1.png</image:loc>
             <image:title>PDRN Capsule Cream 100 - Crème Anti-Âge Coréenne</image:title>
+            <image:caption>Crème régénérante PDRN pour une peau visiblement plus jeune</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://nyvex.fr/assets/images/produit%201/img-3.png</image:loc>
+            <image:title>PDRN Cream Texture</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://nyvex.fr/assets/images/produit%201/img-5.png</image:loc>
+            <image:title>PDRN Cream Application</image:title>
         </image:image>
     </url>
     
@@ -29,9 +48,18 @@
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
         <image:image>
-            <image:loc>https://nyvex.fr/assets/images/produit%202/main.jpg</image:loc>
+            <image:loc>https://nyvex.fr/assets/images/produit%202/S0f86d7e353f6494e8389df31299e6eb5a.jpg_960x960q75.jpg_.png</image:loc>
             <image:title>Vita C Collagen Cream - Crème Vitamine C Anti-Rides</image:title>
+            <image:caption>Crème éclat Vitamine C et Collagène pour une peau lumineuse</image:caption>
         </image:image>
+    </url>
+    
+    <!-- Blog K-Beauty -->
+    <url>
+        <loc>https://nyvex.fr/blog.html</loc>
+        <lastmod>2024-12-26</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
     </url>
     
     <!-- FAQ -->
