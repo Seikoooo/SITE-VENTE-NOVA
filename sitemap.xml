@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    
+    <!-- Page d'accueil -->
+    <url>
+        <loc>https://nyvex.fr/</loc>
+        <lastmod>2024-12-26</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <!-- Produit 1 : PDRN Capsule Cream -->
+    <url>
+        <loc>https://nyvex.fr/product.html</loc>
+        <lastmod>2024-12-26</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://nyvex.fr/assets/images/produit%201/main.jpg</image:loc>
+            <image:title>PDRN Capsule Cream 100 - Crème Anti-Âge Coréenne</image:title>
+        </image:image>
+    </url>
+    
+    <!-- Produit 2 : Vita C Collagen Cream -->
+    <url>
+        <loc>https://nyvex.fr/product-2.html</loc>
+        <lastmod>2024-12-26</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://nyvex.fr/assets/images/produit%202/main.jpg</image:loc>
+            <image:title>Vita C Collagen Cream - Crème Vitamine C Anti-Rides</image:title>
+        </image:image>
+    </url>
+    
+    <!-- FAQ -->
+    <url>
+        <loc>https://nyvex.fr/faq.html</loc>
+        <lastmod>2024-12-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Contact -->
+    <url>
+        <loc>https://nyvex.fr/contact.html</loc>
+        <lastmod>2024-12-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <!-- Livraison -->
+    <url>
+        <loc>https://nyvex.fr/livraison.html</loc>
+        <lastmod>2024-12-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <!-- Retours -->
+    <url>
+        <loc>https://nyvex.fr/retours.html</loc>
+        <lastmod>2024-12-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <!-- Conditions générales -->
+    <url>
+        <loc>https://nyvex.fr/terms.html</loc>
+        <lastmod>2024-12-26</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    
+    <!-- Politique de confidentialité -->
+    <url>
+        <loc>https://nyvex.fr/confidentialite.html</loc>
+        <lastmod>2024-12-26</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    
+</urlset>

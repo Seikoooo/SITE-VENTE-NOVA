@@ -1,0 +1,22 @@
+# Robots.txt pour NYVEX.fr
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://nyvex.fr/sitemap.xml
+
+# Pages importantes
+Allow: /index.html
+Allow: /product.html
+Allow: /product-2.html
+Allow: /faq.html
+Allow: /contact.html
+
+# Ressources
+Allow: /assets/
+
+# Bloquer les fichiers non nécessaires au référencement
+Disallow: /merci.html
+
+# Crawl-delay pour être gentil avec les serveurs
+Crawl-delay: 1
