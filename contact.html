@@ -220,7 +220,14 @@
                 <p><strong>Délai de réponse :</strong> Nous nous engageons à répondre à votre message sous 24 à 48 heures ouvrées.</p>
                 
                 <h2>Formulaire de contact</h2>
-                <form class="contact-form" action="#" method="POST">
+                <form class="contact-form" action="https://formspree.io/f/xjgvbdjd" method="POST">
+                    <!-- Champ anti-spam honeypot -->
+                    <input type="text" name="_gotcha" style="display:none">
+                    <!-- Redirection après envoi -->
+                    <input type="hidden" name="_next" value="https://nyvex.fr/merci.html">
+                    <!-- Sujet de l'email -->
+                    <input type="hidden" name="_subject" value="Nouveau message depuis nyvex.fr">
+                    
                     <div class="form-group">
                         <label for="name">Nom complet *</label>
                         <input type="text" id="name" name="name" required>
