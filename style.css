@@ -1257,6 +1257,14 @@ p {
     margin-left: 10px;
 }
 
+.product-quantity {
+    font-size: 0.95rem;
+    color: var(--text-light);
+    margin: 10px 0 0 0;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
 .product-description {
     font-size: 1rem;
     line-height: 1.9;
