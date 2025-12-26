@@ -1,0 +1,25 @@
+# Configuration GitHub Pages pour NYVEX
+# Active les fonctionnalités Jekyll
+
+# Informations du site
+title: NYVEX - Cosmétiques K-Beauty
+description: Boutique de cosmétiques K-Beauty premium. Crèmes anti-âge coréennes PDRN et Vitamine C. Livraison offerte en France.
+url: https://nyvex.fr
+baseurl: ""
+
+# Langue
+lang: fr
+
+# Plugins
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclure certains fichiers du build
+exclude:
+  - README.md
+  - CNAME
+  - .gitignore
+
+# Activer les pages personnalisées (dont 404)
+permalink: pretty
