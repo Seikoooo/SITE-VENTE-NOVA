@@ -1,53 +1,23 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <!-- Google Analytics 4 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4NR312F1LS"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-4NR312F1LS');
-    </script>
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-M6S8GFCV');</script>
-    <!-- End Google Tag Manager -->
+    <!-- Cookie Consent - RGPD Compliant -->
+    <script src="../assets/js/cookie-consent.js"></script>
     
-    <!-- Trustpilot Integration -->
+    <!-- E-commerce & Behavior Tracking - Après consentement -->
     <script>
-        (function(w,d,s,r,n){w.TrustpilotObject=n;w[n]=w[n]||function(){(w[n].q=w[n].q||[]).push(arguments)};
-            a=d.createElement(s);a.async=1;a.src=r;a.type='text/java'+s;f=d.getElementsByTagName(s)[0];
-            f.parentNode.insertBefore(a,f)})(window,document,'script', 'https://invitejs.trustpilot.com/tp.min.js', 'tp');
-            tp('register', 'MJDBf0lmngxtGzLU');
-    </script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const trustpilot_invitation = {
-                recipientEmail: 'john@gmail.com',
-                recipientName: 'John',
-                referenceId: 'Order_123',
-                source: 'InvitationScript',
-            };
-            tp('createInvitation', trustpilot_invitation);
-        });
-    </script>
-    
-    <!-- E-commerce & Behavior Tracking -->
-    <script>
-        // Produit vu (GA4 E-commerce)
-        gtag('event', 'view_item', {
-            currency: 'EUR',
-            value: 34.90,
-            items: [{
-                item_id: 'PDRN-001',
-                item_name: 'PDRN Capsule Cream',
-                item_brand: 'NYVEX',
-                item_category: 'Soins Visage',
-                item_category2: 'Crèmes',
+        window.addEventListener('analyticsReady', function() {
+            if (typeof gtag === 'function') {
+                // Produit vu (GA4 E-commerce)
+                gtag('event', 'view_item', {
+                    currency: 'EUR',
+                    value: 34.90,
+                    items: [{
+                        item_id: 'PDRN-001',
+                        item_name: 'PDRN Capsule Cream',
+                        item_brand: 'NYVEX',
+                        item_category: 'Soins Visage',
+                        item_category2: 'Crèmes',
                 item_category3: 'Anti-âge',
                 price: 34.90,
                 quantity: 1
