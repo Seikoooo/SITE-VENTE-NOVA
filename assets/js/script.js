@@ -401,23 +401,80 @@ document.querySelectorAll('.feature-card, .ingredient-card, .testimonial-card, .
 const stickyCta = document.querySelector('.sticky-cta');
 const productSection = document.querySelector('.product-section');
 
-if (stickyCta && productSection) {
+if (stickyCta) {
+    let stickyCtaVisible = false;
+    let stickyCtaManuallyHidden = false;
+    let lastScrollY = window.scrollY;
+    let touchStartY = 0;
+    let touchEndY = 0;
+    const swipeThreshold = 50; // Minimum swipe distance
+    const scrollThreshold = 10; // Minimum scroll to trigger
+    
+    // Function to show sticky CTA with animation
+    function showStickyCta() {
+        if (!stickyCtaVisible && !stickyCtaManuallyHidden) {
+            stickyCtaVisible = true;
+            stickyCta.classList.remove('hidden');
+            stickyCta.classList.add('visible');
+        }
+    }
+    
+    // Function to hide sticky CTA with animation
+    function hideStickyCta() {
+        if (stickyCtaVisible) {
+            stickyCtaVisible = false;
+            stickyCta.classList.remove('visible');
+            stickyCta.classList.add('hidden');
+        }
+    }
+    
+    // Scroll event - show on scroll down, hide on scroll up
     window.addEventListener('scroll', () => {
-        const productRect = productSection.getBoundingClientRect();
+        const currentScrollY = window.scrollY;
+        const scrollDelta = currentScrollY - lastScrollY;
         
-        // Show sticky CTA when product section is out of view on mobile
         if (window.innerWidth <= 968) {
-            if (productRect.bottom < 0 || productRect.top > window.innerHeight) {
-                stickyCta.style.transform = 'translateY(0)';
-            } else {
-                stickyCta.style.transform = 'translateY(100%)';
+            // Scrolling down - show CTA immediately
+            if (scrollDelta > scrollThreshold && currentScrollY > 50) {
+                stickyCtaManuallyHidden = false;
+                showStickyCta();
+            }
+            // Scrolling up - hide CTA
+            else if (scrollDelta < -scrollThreshold) {
+                hideStickyCta();
+                stickyCtaManuallyHidden = true;
             }
         }
+        
+        lastScrollY = currentScrollY;
     });
+    
+    // Touch events for swipe detection on mobile
+    document.addEventListener('touchstart', (e) => {
+        touchStartY = e.changedTouches[0].screenY;
+    }, { passive: true });
+    
+    document.addEventListener('touchend', (e) => {
+        if (window.innerWidth > 968) return;
+        
+        touchEndY = e.changedTouches[0].screenY;
+        const swipeDistance = touchStartY - touchEndY;
+        
+        // Swipe up (finger moves up) - hide CTA
+        if (swipeDistance > swipeThreshold) {
+            hideStickyCta();
+            stickyCtaManuallyHidden = true;
+        }
+        // Swipe down (finger moves down) - show CTA
+        else if (swipeDistance < -swipeThreshold) {
+            stickyCtaManuallyHidden = false;
+            showStickyCta();
+        }
+    }, { passive: true });
     
     // Add click handler for sticky CTA button
     const stickyBtn = stickyCta.querySelector('.btn');
-    if (stickyBtn) {
+    if (stickyBtn && productSection) {
         stickyBtn.addEventListener('click', () => {
             productSection.scrollIntoView({ behavior: 'smooth' });
         });

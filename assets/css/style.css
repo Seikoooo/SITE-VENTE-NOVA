@@ -2576,6 +2576,17 @@ p {
     z-index: 100;
     display: none;
     box-sizing: border-box;
+    transform: translateY(100%);
+    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    will-change: transform;
+}
+
+.sticky-cta.visible {
+    transform: translateY(0);
+}
+
+.sticky-cta.hidden {
+    transform: translateY(100%);
 }
 
 .sticky-content {
