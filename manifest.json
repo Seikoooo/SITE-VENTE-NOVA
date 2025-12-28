@@ -1,7 +1,7 @@
 {
     "name": "NYVEX - Cosmétiques K-Beauty",
     "short_name": "NYVEX",
-    "description": "Boutique de cosmétiques K-Beauty premium. Crèmes anti-âge coréennes PDRN et Vitamine C. Livraison offerte en France.",
+    "description": "Boutique de cosmétiques K-Beauty premium. Crèmes Glass Skin coréennes PDRN et Vitamine C. Livraison offerte en France.",
     "start_url": "/",
     "display": "standalone",
     "background_color": "#ffffff",
@@ -29,14 +29,14 @@
         {
             "name": "PDRN Capsule Cream",
             "short_name": "PDRN Cream",
-            "description": "Crème anti-âge coréenne PDRN",
+            "description": "Crème Glass Skin coréenne PDRN",
             "url": "/product.html",
             "icons": [{"src": "/assets/favicon/web-app-manifest-192x192.png", "sizes": "192x192"}]
         },
         {
             "name": "Vita C Collagen Cream",
             "short_name": "Vita C Cream",
-            "description": "Crème Vitamine C anti-rides",
+            "description": "Crème Vitamine C Glass Skin",
             "url": "/product-2.html",
             "icons": [{"src": "/assets/favicon/web-app-manifest-192x192.png", "sizes": "192x192"}]
         }
