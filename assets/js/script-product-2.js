@@ -143,14 +143,14 @@ if (cartBtn) cartBtn.addEventListener('click', openCartDrawer);
 if (addToCartBtn) {
     addToCartBtn.addEventListener('click', () => {
         const quantity = parseInt(qtyInput?.value || 1);
-        addToCart(2, 'Vita C Collagen Cream', 39.99, quantity, 'assets/images/produit%202/S0f86d7e353f6494e8389df31299e6eb5a.jpg_960x960q75.jpg_.png');
+        addToCart(2, 'Vita C Collagen Cream', 19.99, quantity, 'assets/images/produit%202/S0f86d7e353f6494e8389df31299e6eb5a.jpg_960x960q75.jpg_.png');
     });
 }
 
 // Sticky add to cart button
 if (stickyAddToCart) {
     stickyAddToCart.addEventListener('click', () => {
-        addToCart(2, 'Vita C Collagen Cream', 39.99, 1, 'assets/images/produit%202/S0f86d7e353f6494e8389df31299e6eb5a.jpg_960x960q75.jpg_.png');
+        addToCart(2, 'Vita C Collagen Cream', 19.99, 1, 'assets/images/produit%202/S0f86d7e353f6494e8389df31299e6eb5a.jpg_960x960q75.jpg_.png');
     });
 }
 
@@ -193,8 +193,8 @@ if (qtyMinusBtn && qtyPlusBtn && qtyInput) {
 function updateAddToCartPrice() {
     if (addToCartBtn && qtyInput) {
         const quantity = parseInt(qtyInput.value);
-        const price = (39.99 * quantity).toFixed(2).replace('.', ',');
-        addToCartBtn.textContent = `🛒 Ajouter au panier — ${price}€`;
+        const price = (19.99 * quantity).toFixed(2).replace('.', ',');
+        addToCartBtn.textContent = `\u{1F6D2} COMMANDER \u2014 ${price}\u20AC`;
     }
 }
 

@@ -159,14 +159,14 @@ if (cartBtn) cartBtn.addEventListener('click', openCartDrawer);
 if (addToCartBtn) {
     addToCartBtn.addEventListener('click', () => {
         const quantity = parseInt(qtyInput?.value || 1);
-        addToCart(1, 'PDRN Capsule Cream 100', 34.99, quantity);
+        addToCart(1, 'PDRN Capsule Cream 100', 24.99, quantity);
     });
 }
 
 // Sticky add to cart button
 if (stickyAddToCart) {
     stickyAddToCart.addEventListener('click', () => {
-        addToCart(1, 'PDRN Capsule Cream 100', 34.99, 1);
+        addToCart(1, 'PDRN Capsule Cream 100', 24.99, 1);
     });
 }
 
@@ -210,8 +210,8 @@ if (qtyMinusBtn && qtyPlusBtn && qtyInput) {
 function updateAddToCartPrice() {
     if (addToCartBtn && qtyInput) {
         const quantity = parseInt(qtyInput.value);
-        const price = (34.99 * quantity).toFixed(2).replace('.', ',');
-        addToCartBtn.textContent = `Ajouter au panier  ${price}�`;
+        const price = (24.99 * quantity).toFixed(2).replace('.', ',');
+        addToCartBtn.textContent = `\u{1F6D2} COMMANDER \u2014 ${price}\u20AC`;
     }
 }
 
