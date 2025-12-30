@@ -161,7 +161,13 @@
         "@type": "Organization",
         "name": "NYVEX",
         "url": "https://nyvex.fr",
-        "logo": "https://nyvex.fr/assets/favicon/favicon-96x96.png",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://nyvex.fr/assets/favicon/web-app-manifest-512x512.png",
+            "width": 512,
+            "height": 512
+        },
+        "image": "https://nyvex.fr/assets/favicon/web-app-manifest-512x512.png",
         "description": "Boutique de cosmétiques K-Beauty premium en France",
         "sameAs": [],
         "contactPoint": {
@@ -336,7 +342,7 @@
         "@type": "OnlineStore",
         "name": "NYVEX",
         "url": "https://nyvex.fr",
-        "logo": "https://nyvex.fr/assets/favicon/favicon-96x96.png",
+        "logo": "https://nyvex.fr/assets/favicon/web-app-manifest-512x512.png",
         "description": "Boutique en ligne de cosmétiques K-Beauty premium. Crèmes Glass Skin coréennes PDRN et Vitamine C.",
         "priceRange": "€€",
         "currenciesAccepted": "EUR",
@@ -355,16 +361,32 @@
                     "itemListElement": [
                         {
                             "@type": "Offer",
+                            "price": "34.99",
+                            "priceCurrency": "EUR",
                             "itemOffered": {
                                 "@type": "Product",
-                                "name": "PDRN Capsule Cream 100"
+                                "name": "PDRN Capsule Cream 100",
+                                "offers": {
+                                    "@type": "Offer",
+                                    "price": "34.99",
+                                    "priceCurrency": "EUR",
+                                    "availability": "https://schema.org/InStock"
+                                }
                             }
                         },
                         {
                             "@type": "Offer",
+                            "price": "39.99",
+                            "priceCurrency": "EUR",
                             "itemOffered": {
                                 "@type": "Product",
-                                "name": "Vita C Collagen Cream"
+                                "name": "Vita C Collagen Cream",
+                                "offers": {
+                                    "@type": "Offer",
+                                    "price": "39.99",
+                                    "priceCurrency": "EUR",
+                                    "availability": "https://schema.org/InStock"
+                                }
                             }
                         }
                     ]
